@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website-1</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- -----------------------------------NAVBAR-------------------------------- -->
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Remember <span>That</span></a>
+            <img id="mobile-cta" class="mobile-menu"
+                src="https://img.icons8.com/material-outlined/24/000000/menu--v3.png" />
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="./images/exit.png" alt="close">
+                <ul class="primary-nav">
+                    <li class="current"> <a href="#">Home</a> </li>
+                    <li> <a href="#">Features</a> </li>
+                    <li> <a href="#">Pricing</a> </li>
+                </ul>
+                <ul class="secondary-nav">
+                    <li> <a href="#">Contact</a> </li>
+                    <li class="go-premium-cta"> <a href="#">Go Premium</a> </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- -----------------------------------HERO TEXt-------------------------------- -->
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">It's nitty &amp; Gritty</p>
+                <h1>The Task App That Doesn't Stink</h1>
+                <div class="hero-cat">
+                    <a href="#" class="primary-cta">Try For Free</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="./images/vedio-icon.png" alt="watch video">
+                        watch a Video
+                    </a>
+                </div>
+            </div>
+            <img class="hero-img" src="./images/Checklist-icon-color.png" alt="">
+        </div>
+    </section>
+    <!-- -----------------------------------1st SECTION-------------------------------- -->
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Unlimited Task</li>
+                <li>SMS Task Reminder</li>
+                <li>Confetti Explosions upon Task Completions</li>
+                <li>Social media Ancouments</li>
+                <li>Real Time Collaboration</li>
+                <li>other awesome features</li>
+            </ul>
+
+            <img src="images/man.jpg" alt="main holding phone">
+        </div>
+    </section>
+    <!-- -----------------------------------TEST SECTION-------------------------------- -->
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li> <img src="./images/person-1.jpg" alt="person-profile">
+                    <blockquote>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et corrupti eos porro officia
+                        consequatur a voluptates explicabo aliquid in assumenda similique soluta voluptas quam, cum quas
+                        iste nostrum cupiditate nesciunt.</blockquote>
+                    <cite>- jane Doe</cite>
+                </li>
+                <li> <img src="./images/person-2.png" alt="person-profile">
+                    <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, iusto reiciendis porro
+                        eos voluptate facere recusandae. Expedita modi tenetur architecto rem sit excepturi assumenda
+                        beatae enim ut, minima in porro.</blockquote>
+                    <cite>- Jasmine Belgic </cite>
+                </li>
+                <li> <img src="./images/person-3.jpg" alt="person-profile">
+                    <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, iusto reiciendis porro
+                        eos voluptate facere recusandae. Expedita modi tenetur architecto rem sit excepturi assumenda
+                        beatae enim ut, minima in porro.</blockquote>
+                    <cite>- alexzander</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- -----------------------------------CONTACT SECTION-------------------------------- -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h1>Contact</h1>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="enter your name">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="enter your email">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="Type your message here......"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="send message">
+
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.7934363433205!2d67.12217075048456!3d24.939105883938456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb338980b4615af%3A0xe968e4f0fd0119cd!2sUniversity%20of%20Karachi!5e0!3m2!1sen!2s!4v1628901588403!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- -----------------------------------FOOTER-------------------------------- -->
+    <div class="footer">
+        <div class="container">
+            <a class="copy-write" href="#">Copy right @2021</a>
+            <span></span>
+            <a href="#top"><img href="#top" class="footer-img" src="./images/arrow-up.png" /></a>
+            
+
+
+        </div>
+
+    </div>
+    </div>
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExist = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () =>{
+             nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExist.addEventListener('click', () =>{
+             nav.classList.remove('menu-btn');
+        })
+
+    </script>
+</body>
+
+</html>
